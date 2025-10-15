@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>شهداء فلسطين – لن ننسى</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <img src="palestine-logo.gif" alt="شعار فلسطين" />
+        </div>
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link">الرئيسية</a></li>
+          <li><a href="#martyrs" class="nav-link">الشهداء</a></li>
+          <li><a href="#events" class="nav-link">الأحداث</a></li>
+          <li><a href="#about" class="nav-link">من نحن</a></li>
+          <li><a href="#contact" class="nav-link">تواصل معنا</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1 class="hero-title">شهداء فلسطين – لن ننسى</h1>
+        <p class="hero-subtitle">
+          نخلد ذكرى الأبطال الذين ضحوا بأرواحهم من أجل فلسطين
+        </p>
+        <button class="hero-btn" onclick="scrollToMartyrs()">
+          شاهد الأبطال
+        </button>
+      </div>
+    </section>
+
+    <!-- Martyrs Section -->
+    <section id="martyrs" class="martyrs">
+      <div class="container">
+        <h2 class="section-title">شهداؤنا الأبطال</h2>
+        <div class="martyrs-grid">
+          <!-- Journalist Martyrs - Featured at the beginning -->
+          <div class="martyr-card featured">
+            <div class="martyr-badge">صحفي شهيد</div>
+            <img src="martyr1.png" alt="أنس الشريف" class="martyr-img" />
+            <div class="martyr-info">
+              <h3>أنس الشريف</h3>
+              <p><span>العمر:</span> 28 سنة</p>
+              <p><span>المدينة:</span> غزة</p>
+              <p><span>تاريخ الاستشهاد:</span> 10/8/2024</p>
+              <p class="martyr-desc">
+                صحفي مراسل لقناة الجزيرة استُشهد في غارة استهدفت خيمة للصحفيين
+                قرب مستشفى الشفاء
+              </p>
+            </div>
+          </div>
+          <div class="martyr-card featured">
+            <div class="martyr-badge">صحفي شهيد</div>
+            <img src="martyr2.png" alt="صالح الجعفراوي" class="martyr-img" />
+            <div class="martyr-info">
+              <h3>صالح الجعفراوي</h3>
+              <p><span>العمر:</span> 28 سنة</p>
+              <p><span>المدينة:</span> غزة</p>
+              <p><span>تاريخ الاستشهاد:</span> 12/10/2024</p>
+              <p class="martyr-desc">
+                صحفي ومؤثر فلسطيني استُشهد أثناء تغطيته اشتباكات في حي الصّبرى
+                بغزة
+              </p>
+            </div>
+          </div>
+
+          <!-- Other Martyrs -->
+          <div class="martyr-card">
+            <img src="martyr3.png" alt="شهيد" class="martyr-img" />
+            <div class="martyr-info">
+              <h3>أحمد محمد</h3>
+              <p><span>العمر:</span> 22 سنة</p>
+              <p><span>المدينة:</span> غزة</p>
+              <p><span>تاريخ الاستشهاد:</span> 15/10/2023</p>
+              <p class="martyr-desc">استشهد وهو يدافع عن أرضه</p>
+            </div>
+          </div>
+          <div class="martyr-card">
+            <img src="martyr4.png" alt="شهيدة" class="martyr-img" />
+            <div class="martyr-info">
+              <h3>فاطمة علي</h3>
+              <p><span>العمر:</span> 18 سنة</p>
+              <p><span>المدينة:</span> خان يونس</p>
+              <p><span>تاريخ الاستشهاد:</span> 20/10/2023</p>
+              <p class="martyr-desc">وردة فلسطينية فاحت عطراً</p>
+            </div>
+          </div>
+          <div class="martyr-card">
+            <img src="martyr5.png" alt="شهيد" class="martyr-img" />
+            <div class="martyr-info">
+              <h3>يوسف إبراهيم</h3>
+              <p><span>العمر:</span> 25 سنة</p>
+              <p><span>المدينة:</span> رفح</p>
+              <p><span>تاريخ الاستشهاد:</span> 25/10/2023</p>
+              <p class="martyr-desc">شهيد الحرية والكرامة</p>
+            </div>
+          </div>
+          <div class="martyr-card">
+            <img src="martyr6.png" alt="شهيدة" class="martyr-img" />
+            <div class="martyr-info">
+              <h3>مريم سعيد</h3>
+              <p><span>العمر:</span> 30 سنة</p>
+              <p><span>المدينة:</span> غزة</p>
+              <p><span>تاريخ الاستشهاد:</span> 30/10/2023</p>
+              <p class="martyr-desc">أم شهيدة تركت أثراً خالداً</p>
+            </div>
+          </div>
+          <div class="martyr-card">
+            <img src="martyr7.png" alt="شهيد" class="martyr-img" />
+            <div class="martyr-info">
+              <h3>خالد حسن</h3>
+              <p><span>العمر:</span> 19 سنة</p>
+              <p><span>المدينة:</span> جباليا</p>
+              <p><span>تاريخ الاستشهاد:</span> 5/11/2023</p>
+              <p class="martyr-desc">شاب فلسطيني بطل</p>
+            </div>
+          </div>
+          <div class="martyr-card">
+            <img src="martyr8.png" alt="شهيدة" class="martyr-img" />
+            <div class="martyr-info">
+              <h3>نورا أحمد</h3>
+              <p><span>العمر:</span> 16 سنة</p>
+              <p><span>المدينة:</span> دير البلح</p>
+              <p><span>تاريخ الاستشهاد:</span> 10/11/2023</p>
+              <p class="martyr-desc">زهرة الشهداء</p>
+            </div>
+          </div>
+          <div class="martyr-card">
+            <img src="martyr9.png" alt="شهيد" class="martyr-img" />
+            <div class="martyr-info">
+              <h3>عمر خالد</h3>
+              <p><span>العمر:</span> 28 سنة</p>
+              <p><span>المدينة:</span> غزة</p>
+              <p><span>تاريخ الاستشهاد:</span> 15/11/2023</p>
+              <p class="martyr-desc">مقاوم شجاع</p>
+            </div>
+          </div>
+          <div class="martyr-card">
+            <img src="martyr10.png" alt="شهيدة" class="martyr-img" />
+            <div class="martyr-info">
+              <h3>سارة محمود</h3>
+              <p><span>العمر:</span> 21 سنة</p>
+              <p><span>المدينة:</span> بيت لاهيا</p>
+              <p><span>تاريخ الاستشهاد:</span> 20/11/2023</p>
+              <p class="martyr-desc">شهيدة العزة</p>
+            </div>
+          </div>
+          <div class="martyr-card">
+            <img src="martyr11.png" alt="شهيد" class="martyr-img" />
+            <div class="martyr-info">
+              <h3>علي رشاد</h3>
+              <p><span>العمر:</span> 35 سنة</p>
+              <p><span>المدينة:</span> غزة</p>
+              <p><span>تاريخ الاستشهاد:</span> 25/11/2023</p>
+              <p class="martyr-desc">أسد فلسطين</p>
+            </div>
+          </div>
+          <div class="martyr-card">
+            <img src="martyr12.png" alt="شهيدة" class="martyr-img" />
+            <div class="martyr-info">
+              <h3>هدى يوسف</h3>
+              <p><span>العمر:</span> 24 سنة</p>
+              <p><span>المدينة:</span> خان يونس</p>
+              <p><span>تاريخ الاستشهاد:</span> 30/11/2023</p>
+              <p class="martyr-desc">مثال في التضحية</p>
+            </div>
+          </div>
+          <div class="martyr-card">
+            <img src="martyr13.png" alt="شهيد" class="martyr-img" />
+            <div class="martyr-info">
+              <h3>إبراهيم صالح</h3>
+              <p><span>العمر:</span> 27 سنة</p>
+              <p><span>المدينة:</span> رفح</p>
+              <p><span>تاريخ الاستشهاد:</span> 5/12/2023</p>
+              <p class="martyr-desc">بطل المقاومة</p>
+            </div>
+          </div>
+          <div class="martyr-card">
+            <img src="martyr14.png" alt="شهيدة" class="martyr-img" />
+            <div class="martyr-info">
+              <h3>ليلى حسن</h3>
+              <p><span>العمر:</span> 20 سنة</p>
+              <p><span>المدينة:</span> جباليا</p>
+              <p><span>تاريخ الاستشهاد:</span> 10/12/2023</p>
+              <p class="martyr-desc">نجم سطع في سماء فلسطين</p>
+            </div>
+          </div>
+          <div class="martyr-card">
+            <img src="martyr15.png" alt="شهيد" class="martyr-img" />
+            <div class="martyr-info">
+              <h3>محمد علي</h3>
+              <p><span>العمر:</span> 32 سنة</p>
+              <p><span>المدينة:</span> غزة</p>
+              <p><span>تاريخ الاستشهاد:</span> 15/12/2023</p>
+              <p class="martyr-desc">شهيد الحق</p>
+            </div>
+          </div>
+          <div class="martyr-card">
+            <img src="martyr16.png" alt="شهيدة" class="martyr-img" />
+            <div class="martyr-info">
+              <h3>أسماء خالد</h3>
+              <p><span>العمر:</span> 17 سنة</p>
+              <p><span>المدينة:</span> دير البلح</p>
+              <p><span>تاريخ الاستشهاد:</span> 20/12/2023</p>
+              <p class="martyr-desc">شهيدة الصبر</p>
+            </div>
+          </div>
+          <div class="martyr-card">
+            <img src="martyr17.png" alt="شهيد" class="martyr-img" />
+            <div class="martyr-info">
+              <h3>ياسر محمود</h3>
+              <p><span>العمر:</span> 29 سنة</p>
+              <p><span>المدينة:</span> بيت لاهيا</p>
+              <p><span>تاريخ الاستشهاد:</span> 25/12/2023</p>
+              <p class="martyr-desc">فدائي فلسطين</p>
+            </div>
+          </div>
+          <div class="martyr-card">
+            <img src="martyr18.png" alt="شهيدة" class="martyr-img" />
+            <div class="martyr-info">
+              <h3>رنا إبراهيم</h3>
+              <p><span>العمر:</span> 23 سنة</p>
+              <p><span>المدينة:</span> غزة</p>
+              <p><span>تاريخ الاستشهاد:</span> 30/12/2023</p>
+              <p class="martyr-desc">شهيدة الإيمان</p>
+            </div>
+          </div>
+          <div class="martyr-card">
+            <img src="martyr19.png" alt="شهيد" class="martyr-img" />
+            <div class="martyr-info">
+              <h3>سالم أحمد</h3>
+              <p><span>العمر:</span> 26 سنة</p>
+              <p><span>المدينة:</span> خان يونس</p>
+              <p><span>تاريخ الاستشهاد:</span> 5/1/2024</p>
+              <p class="martyr-desc">مقاوم بطل</p>
+            </div>
+          </div>
+          <div class="martyr-card">
+            <img src="martyr20.png" alt="شهيدة" class="martyr-img" />
+            <div class="martyr-info">
+              <h3>فداء محمد</h3>
+              <p><span>العمر:</span> 19 سنة</p>
+              <p><span>المدينة:</span> رفح</p>
+              <p><span>تاريخ الاستشهاد:</span> 10/1/2024</p>
+              <p class="martyr-desc">زهرة فلسطينية</p>
+            </div>
+          </div>
+          <div class="martyr-card">
+            <img src="martyr21.png" alt="شهيد" class="martyr-img" />
+            <div class="martyr-info">
+              <h3>باسم علي</h3>
+              <p><span>العمر:</span> 31 سنة</p>
+              <p><span>المدينة:</span> جباليا</p>
+              <p><span>تاريخ الاستشهاد:</span> 15/1/2024</p>
+              <p class="martyr-desc">شهيد الكرامة</p>
+            </div>
+          </div>
+          <div class="martyr-card">
+            <img src="martyr22.png" alt="شهيدة" class="martyr-img" />
+            <div class="martyr-info">
+              <h3>نادية سعيد</h3>
+              <p><span>العمر:</span> 22 سنة</p>
+              <p><span>المدينة:</span> غزة</p>
+              <p><span>تاريخ الاستشهاد:</span> 20/1/2024</p>
+              <p class="martyr-desc">مثال في العطاء</p>
+            </div>
+          </div>
+          <div class="martyr-card">
+            <img src="martyr23.png" alt="شهيد" class="martyr-img" />
+            <div class="martyr-info">
+              <h3>حسام محمود</h3>
+              <p><span>العمر:</span> 24 سنة</p>
+              <p><span>المدينة:</span> دير البلح</p>
+              <p><span>تاريخ الاستشهاد:</span> 25/1/2024</p>
+              <p class="martyr-desc">أسد الميدان</p>
+            </div>
+          </div>
+          <div class="martyr-card">
+            <img src="martyr24.png" alt="شهيدة" class="martyr-img" />
+            <div class="martyr-info">
+              <h3>مروة خالد</h3>
+              <p><span>العمر:</span> 18 سنة</p>
+              <p><span>المدينة:</span> بيت لاهيا</p>
+              <p><span>تاريخ الاستشهاد:</span> 30/1/2024</p>
+              <p class="martyr-desc">شهيدة الأمل</p>
+            </div>
+          </div>
+          <div class="martyr-card">
+            <img src="martyr25.png" alt="شهيد" class="martyr-img" />
+            <div class="martyr-info">
+              <h3>جمال إبراهيم</h3>
+              <p><span>العمر:</span> 33 سنة</p>
+              <p><span>المدينة:</span> غزة</p>
+              <p><span>تاريخ الاستشهاد:</span> 5/2/2024</p>
+              <p class="martyr-desc">بطل فلسطين</p>
+            </div>
+          </div>
+          <div class="martyr-card">
+            <img src="martyr26.png" alt="شهيدة" class="martyr-img" />
+            <div class="martyr-info">
+              <h3>سعاد أحمد</h3>
+              <p><span>العمر:</span> 25 سنة</p>
+              <p><span>المدينة:</span> خان يونس</p>
+              <p><span>تاريخ الاستشهاد:</span> 10/2/2024</p>
+              <p class="martyr-desc">شهيدة العطاء</p>
+            </div>
+          </div>
+          <div class="martyr-card">
+            <img src="martyr27.png" alt="شهيد" class="martyr-img" />
+            <div class="martyr-info">
+              <h3>عبدالله محمد</h3>
+              <p><span>العمر:</span> 28 سنة</p>
+              <p><span>المدينة:</span> رفح</p>
+              <p><span>تاريخ الاستشهاد:</span> 15/2/2024</p>
+              <p class="martyr-desc">شهيد الحرية</p>
+            </div>
+          </div>
+          <div class="martyr-card">
+            <img src="martyr28.png" alt="شهيدة" class="martyr-img" />
+            <div class="martyr-info">
+              <h3>إيمان علي</h3>
+              <p><span>العمر:</span> 21 سنة</p>
+              <p><span>المدينة:</span> جباليا</p>
+              <p><span>تاريخ الاستشهاد:</span> 20/2/2024</p>
+              <p class="martyr-desc">ملاك فلسطين</p>
+            </div>
+          </div>
+          <div class="martyr-card">
+            <img src="martyr29.png" alt="شهيد" class="martyr-img" />
+            <div class="martyr-info">
+              <h3>صالح حسن</h3>
+              <p><span>العمر:</span> 30 سنة</p>
+              <p><span>المدينة:</span> غزة</p>
+              <p><span>تاريخ الاستشهاد:</span> 25/2/2024</p>
+              <p class="martyr-desc">شهيد الحق</p>
+            </div>
+          </div>
+          <div class="martyr-card">
+            <img src="martyr30.png" alt="شهيدة" class="martyr-img" />
+            <div class="martyr-info">
+              <h3>هدى محمود</h3>
+              <p><span>العمر:</span> 26 سنة</p>
+              <p><span>المدينة:</span> دير البلح</p>
+              <p><span>تاريخ الاستشهاد:</span> 1/3/2024</p>
+              <p class="martyr-desc">شهيدة الصمود</p>
+            </div>
+          </div>
+          <div class="martyr-card">
+            <img src="martyr31.png" alt="شهيد" class="martyr-img" />
+            <div class="martyr-info">
+              <h3>فارس إبراهيم</h3>
+              <p><span>العمر:</span> 23 سنة</p>
+              <p><span>المدينة:</span> بيت لاهيا</p>
+              <p><span>تاريخ الاستشهاد:</span> 5/3/2024</p>
+              <p class="martyr-desc">فارس فلسطين</p>
+            </div>
+          </div>
+          <div class="martyr-card">
+            <img src="martyr32.png" alt="شهيدة" class="martyr-img" />
+            <div class="martyr-info">
+              <h3>دعاء أحمد</h3>
+              <p><span>العمر:</span> 20 سنة</p>
+              <p><span>المدينة:</span> غزة</p>
+              <p><span>تاريخ الاستشهاد:</span> 10/3/2024</p>
+              <p class="martyr-desc">شهيدة الإيمان والعطاء</p>
+            </div>
+          </div>
+          <div class="martyr-card">
+            <img src="martyr33.png" alt="شهيد" class="martyr-img" />
+            <div class="martyr-info">
+              <h3>محمود سالم</h3>
+              <p><span>العمر:</span> 34 سنة</p>
+              <p><span>المدينة:</span> خان يونس</p>
+              <p><span>تاريخ الاستشهاد:</span> 15/3/2024</p>
+              <p class="martyr-desc">شهيد الأقصى</p>
+            </div>
+          </div>
+          <div class="martyr-card">
+            <img src="martyr34.png" alt="شهيدة" class="martyr-img" />
+            <div class="martyr-info">
+              <h3>رنا خالد</h3>
+              <p><span>العمر:</span> 27 سنة</p>
+              <p><span>المدينة:</span> رفح</p>
+              <p><span>تاريخ الاستشهاد:</span> 20/3/2024</p>
+              <p class="martyr-desc">شهيدة الصبر والإيمان</p>
+            </div>
+          </div>
+          <div class="martyr-card">
+            <img src="martyr35.png" alt="شهيد" class="martyr-img" />
+            <div class="martyr-info">
+              <h3>أيمن محمد</h3>
+              <p><span>العمر:</span> 36 سنة</p>
+              <p><span>المدينة:</span> جباليا</p>
+              <p><span>تاريخ الاستشهاد:</span> 25/3/2024</p>
+              <p class="martyr-desc">شهيد الحق والحرية</p>
+            </div>
+          </div>
+          <div class="martyr-card">
+            <img src="martyr36.png" alt="شهيدة" class="martyr-img" />
+            <div class="martyr-info">
+              <h3>سمر أحمد</h3>
+              <p><span>العمر:</span> 24 سنة</p>
+              <p><span>المدينة:</span> دير البلح</p>
+              <p><span>تاريخ الاستشهاد:</span> 30/3/2024</p>
+              <p class="martyr-desc">زهرة فلسطين الخالدة</p>
+            </div>
+          </div>
+          <div class="martyr-card">
+            <img src="martyr37.png" alt="شهيد" class="martyr-img" />
+            <div class="martyr-info">
+              <h3>عمر سعيد</h3>
+              <p><span>العمر:</span> 29 سنة</p>
+              <p><span>المدينة:</span> بيت لاهيا</p>
+              <p><span>تاريخ الاستشهاد:</span> 5/4/2024</p>
+              <p class="martyr-desc">شهيد الكرامة الوطنية</p>
+            </div>
+          </div>
+          <div class="martyr-card">
+            <img src="martyr38.png" alt="شهيد" class="martyr-img" />
+            <div class="martyr-info">
+              <h3>نور الدين</h3>
+              <p><span>العمر:</span> 31 سنة</p>
+              <p><span>المدينة:</span> غزة</p>
+              <p><span>تاريخ الاستشهاد:</span> 10/4/2024</p>
+              <p class="martyr-desc">شهيد العزة والنضال</p>
+            </div>
+          </div>
+          <div class="martyr-card">
+            <img src="martyr39.png" alt="شهيد" class="martyr-img" />
+            <div class="martyr-info">
+              <h3>خالد يوسف</h3>
+              <p><span>العمر:</span> 38 سنة</p>
+              <p><span>المدينة:</span> خان يونس</p>
+              <p><span>تاريخ الاستشهاد:</span> 15/4/2024</p>
+              <p class="martyr-desc">شهيد فلسطين الأبدي</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="events">
+      <div class="container">
+        <h2 class="section-title">الأحداث الزمنية</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-img">
+              <img src="event1.png" alt="القدس" />
+            </div>
+            <div class="timeline-content">
+              <h3>7 أكتوبر 2023</h3>
+              <p>
+                بداية العدوان الإسرائيلي على غزة بعد عملية طوفان الأقصى، وتصاعد
+                القصف الجوي العنيف على القطاع.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-img">
+              <img src="event2.png" alt="حصار غزة" />
+            </div>
+            <div class="timeline-content">
+              <h3>9 أكتوبر 2023</h3>
+              <p>
+                إعلان الاحتلال فرض حصار كامل على قطاع غزة وقطع الكهرباء والمياه
+                والوقود.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-img">
+              <img src="event3.png" alt="هجوم بري" />
+            </div>
+            <div class="timeline-content">
+              <h3>27 أكتوبر 2023</h3>
+              <p>
+                بدء الهجوم البري الإسرائيلي على شمال قطاع غزة ودخول الدبابات إلى
+                أطراف المدينة.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-img">
+              <img src="event4.png" alt="مستشفى الشفاء" />
+            </div>
+            <div class="timeline-content">
+              <h3>15 نوفمبر 2023</h3>
+              <p>
+                استهداف مستشفى الشفاء بشكل مباشر ومحاصرته من قبل القوات
+                الإسرائيلية.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-img">
+              <img src="event5.png" alt="مساعدات إنسانية" />
+            </div>
+            <div class="timeline-content">
+              <h3>24 نوفمبر 2023</h3>
+              <p>
+                بدء الهدنة الإنسانية المؤقتة ودخول أول قوافل المساعدات إلى غزة
+                عبر معبر رفح.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-img">
+              <img src="event6.png" alt="تجدد القتال" />
+            </div>
+            <div class="timeline-content">
+              <h3>1 ديسمبر 2023</h3>
+              <p>
+                استئناف القتال بعد انتهاء الهدنة، وتجدد القصف على مناطق واسعة في
+                القطاع.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-img">
+              <img src="event7.png" alt="محكمة العدل الدولية" />
+            </div>
+            <div class="timeline-content">
+              <h3>11 يناير 2024</h3>
+              <p>
+                بدء جلسات محكمة العدل الدولية في لاهاي للنظر في الدعوى المقدمة
+                ضد إسرائيل بتهمة الإبادة الجماعية.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-img">
+              <img src="event8.png" alt="مجزرة غزة" />
+            </div>
+            <div class="timeline-content">
+              <h3>29 فبراير 2024</h3>
+              <p>
+                وقوع مجزرة المساعدات في غزة أثناء توزيع الإغاثة شمال القطاع،
+                وسقوط عشرات الشهداء.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-img">
+              <img src="event9.png" alt="مجلس الأمن" />
+            </div>
+            <div class="timeline-content">
+              <h3>25 مارس 2024</h3>
+              <p>
+                مجلس الأمن يعتمد قراراً يدعو إلى وقف فوري لإطلاق النار في قطاع
+                غزة.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-img">
+              <img src="event10.png" alt="استشهاد الصحفيين" />
+            </div>
+            <div class="timeline-content">
+              <h3>10 أغسطس 2024</h3>
+              <p>
+                استشهاد الصحفي أنس الشريف في غارة إسرائيلية استهدفت خيمة
+                الصحفيين قرب مستشفى الشفاء، واستشهاد زميله صالح الجعفراوي لاحقاً
+                في أكتوبر.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title">من نحن</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              موقع "شهداء فلسطين" هو منصة تذكارية تهدف إلى توثيق وتخليد ذكرى
+              شهدائنا الأبطال الذين ضحوا بأرواحهم دفاعاً عن أرض فلسطين
+              ومقدساتها. نؤمن بأن ذكرى الشهداء تبقى خالدة في قلوبنا وعقول
+              الأجيال القادمة.
+            </p>
+            <p>
+              نخص بالذكر شهداء الإعلام الذين سقطوا وهم يؤدون واجبهم في نقل
+              الحقيقة للعالم، مثل الصحفيين أنس الشريف وصالح الجعفراوي وغيرهم من
+              الأبطال الذين كتبوا بدمائهم تاريخ النضال الفلسطيني.
+            </p>
+            <p>
+              من خلال هذا الموقع، نسعى للحفاظ على تراث النضال الفلسطيني ونقل قصص
+              البطولة والتضحية للأجيال القادمة، لتبقى فلسطين حية في قلوبنا
+              وأرواحنا.
+            </p>
+          </div>
+          <div class="about-img">
+            <img src="palestine-map.png" alt="خريطة فلسطين" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title">تواصل معنا</h2>
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="الاسم الكامل"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="البريد الإلكتروني"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="رسالتك"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="submit-btn">إرسال الرسالة</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <p>&copy; 2025 شهداء فلسطين - جميع الحقوق محفوظة.<br>
+          <img style="width: 100px; display:flex;" src="palestine-logo.gif" alt="شعار فلسطين" />
+ تم التصميم بواسطة م / عمر عبدالسلام </p>
+
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop">
+      <span>↑</span>
+    </button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
